@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Reservation</title>
+    <link rel="stylesheet" href="./CSS pages/consulting.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <header>
+        <div class="logo">MEDLINK</div>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about us.html">About</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./doctors.html">Doctors</a></li>
+                <li><a href="./consulting.html">Consulting Reservation</a></li>
+                <li><a href="./pharmacy.html">Pharmacy</a></li>
+                <li><a href="./visitor info.html">Visitor Information</a></li>
+            </ul>
+        </nav>
+        
+        </div>
+        <div class="contact-button">
+            <a href="./contact us.html">Contact Us</a>
+        </div>
+        <!-- Hamburger icon -->
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="consulting-form">
+        <div class="form-header">
+            <h1>Consulting Reservation</h1>
+            <p>Book an appointment with ease by filling the details below.</p>
+        </div>
+        <form action="#" method="post">
+            <div class="form-left">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="specialist">Specialist Preference</label>
+                <select id="specialist" name="specialist">
+                    <option value="none">Select Specialist</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="dermatology">Dermatology</option>
+                    <option value="neurology">Neurology</option>
+                </select>
+            </div>
+
+            <div class="form-right">
+                <label for="reason">Reason for Visit</label>
+                <textarea id="reason" name="reason" placeholder="Reason for Visit"></textarea>
+
+                <label for="appointment-type">Appointment Type</label>
+                <select id="appointment-type" name="appointment-type">
+                    <option value="in-person">In-Person</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" placeholder="Any additional notes..."></textarea>
+
+                <label for="insurance">Insurance Info.</label>
+                <input type="text" id="insurance" name="insurance" placeholder="Insurance Info.">
+
+                <button type="submit" class="submit-button">SUBMIT</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>&copy; 2024 MED LINK. All Rights Reserved.</p>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-links">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./contact us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Phone: (123) 456-7890</p>
+                <a href="mailto:info@medlink.com">Email: info@medlink.com</a>
+            </div>
+        </div>
+        <script src="./Scripts/nav.js"></script>
+    </footer>
+</body>
+</html>

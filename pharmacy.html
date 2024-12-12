@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Order Page</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./CSS pages/pharmacy.css">
+</head>
+<body>
+  <header>
+    <div class="logo">MEDLINK</div>
+    <nav>
+        <ul id="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about us.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./doctors.html">Doctors</a></li>
+            <li><a href="./consulting.html">Consulting Reservation</a></li>
+            <li><a href="./pharmacy.html">Pharmacy</a></li>
+            <li><a href="./visitor info.html">Visitor Information</a></li>
+        </ul>
+    </nav>
+    
+    </div>
+    <div class="contact-button">
+        <a href="./contact us.html">Contact Us</a>
+    </div>
+    <!-- Hamburger icon -->
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+  </header>
+  
+  <main>
+    <!-- Medicine Categories -->
+    <section id="categories">
+      <h2>Order Medicines</h2>
+      
+      <!-- Analgesics Section -->
+      <div class="category">
+        <h3>Analgesics</h3>
+        <ul>
+          <li>
+            <span>Paracetamol - $5</span>
+            <input type="number" min="0" value="0" data-price="5" class="quantity" data-name="Paracetamol">
+          </li>
+          <li>
+            <span>Ibuprofen - $6</span>
+            <input type="number" min="0" value="0" data-price="6" class="quantity" data-name="Ibuprofen">
+          </li>
+          <li>
+            <span>Aspirin - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Aspirin">
+          </li>
+          <li>
+            <span>Codeine - $8</span>
+            <input type="number" min="0" value="0" data-price="8" class="quantity" data-name="Codeine">
+          </li>
+          <li>
+            <span>Tramadol - $4</span>
+            <input type="number" min="0" value="0" data-price="4" class="quantity" data-name="Tramadol">
+          </li>
+          <li>
+            <span>Diclofenac - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Diclofenac">
+          </li>
+          
+        </ul>
+      </div>
+      
+      <!-- Antibiotics Section -->
+      <div class="category">
+        <h3>Antibiotics</h3>
+        <ul>
+          <li>
+            <span>Amoxicillin - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Amoxicillin">
+          </li>
+          <li>
+            <span>Azithromycin - $9</span>
+            <input type="number" min="0" value="0" data-price="9" class="quantity" data-name="Azithromycin">
+          </li>
+          <li>
+            <span>Ciprofloxacin - $5</span>
+            <input type="number" min="0" value="0" data-price="5" class="quantity" data-name="Ciprofloxacin">
+          </li>
+          <li>
+            <span>Doxycycline - $12</span>
+            <input type="number" min="0" value="0" data-price="12" class="quantity" data-name="Doxycycline">
+          </li>
+          <li>
+            <span>Metronidazole - $15</span>
+            <input type="number" min="0" value="0" data-price="15" class="quantity" data-name="Metronidazole">
+          </li>
+          <li>
+            <span>Cephalexin - $7</span>
+            <input type="number" min="0" value="0" data-price="7" class="quantity" data-name="Cephalexin">
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- Antidepressants Section -->
+      <div class="category">
+        <h3>Antidepressants</h3>
+        <ul>
+          <li>
+            <span>Fluoxetine (Prozac) - $12</span>
+            <input type="number" min="0" value="0" data-price="12" class="quantity" data-name="Fluoxetine (Prozac)">
+          </li>
+          <li>
+            <span>Sertraline (Zoloft) - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Sertraline (Zoloft)">
+          </li>
+          <li>
+            <span>Citalopram (Celexa) - $9</span>
+            <input type="number" min="0" value="0" data-price="9" class="quantity" data-name="Citalopram (Celexa)">
+          </li>
+          <li>
+            <span>Amitriptyline - $15</span>
+            <input type="number" min="0" value="0" data-price="15" class="quantity" data-name="Amitriptyline">
+          </li>
+          <li>
+            <span>Venlafaxine (Effexor) - $18</span>
+            <input type="number" min="0" value="0" data-price="18" class="quantity" data-name="Venlafaxine (Effexor)">
+          </li>
+          <li>
+            <span>Bupropion (Wellbutrin) - $14</span>
+            <input type="number" min="0" value="0" data-price="14" class="quantity" data-name="Bupropion (Wellbutrin)">
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- Antihistamines Section -->
+       <div class="category">
+        <h3>Antihistamines</h3>
+        <ul>
+          <li>
+            <span>Diphenhydramine (Benadryl) - $12</span>
+            <input type="number" min="0" value="0" data-price="12" class="quantity" data-name="Diphenhydramine (Benadryl) ">
+          </li>
+          <li>
+            <span>Loratadine (Claritin) - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Loratadine (Claritin)">
+          </li>
+          <li>
+            <span>Cetirizine (Zyrtec) - $9</span>
+            <input type="number" min="0" value="0" data-price="15" class="quantity" data-name="Cetirizine (Zyrtec)">
+          </li>
+          <li>
+            <span>Fexofenadine (Allegra) - $15</span>
+            <input type="number" min="0" value="0" data-price="18" class="quantity" data-name="Fexofenadine (Allegra)">
+          </li>
+          <li>
+            <span>Chlorpheniramine - $18</span>
+            <input type="number" min="0" value="0" data-price="20" class="quantity" data-name="Chlorpheniramine">
+          </li>
+
+      <!-- Antihypertensives Section -->
+      <div class="category">
+        <h3>Antihypertensives</h3>
+        <ul>
+          <li>
+            <span>Lisinopril - $14</span>
+            <input type="number" min="0" value="0" data-price="14" class="quantity" data-name="Lisinopril">
+          </li>
+          <li>
+            <span>Amlodipine - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Amlodipine">
+          </li>
+          <li>
+            <span>Losartan - $8</span>
+            <input type="number" min="0" value="0" data-price="8" class="quantity" data-name="Losartan">
+          </li>
+          <li>
+            <span>Metoprolol - $5</span>
+            <input type="number" min="0" value="0" data-price="5" class="quantity" data-name="Metoprolol">
+          </li>
+          <li>
+            <span>Hydrochlorothiazide (HCTZ) - $8</span>
+            <input type="number" min="0" value="0" data-price="8" class="quantity" data-name="Hydrochlorothiazide (HCTZ)">
+          </li>
+          <li>
+            <span>Clonidine - $10</span>
+            <input type="number" min="0" value="0" data-price="10" class="quantity" data-name="Clonidine">
+          </li>
+          
+        </ul>
+      </div>
+          
+          
+        
+      
+      
+      <!-- Add other sections (Antidepressants, Antihistamines, Antihypertensives) similarly -->
+    </section>
+    
+    <!-- Order Summary -->
+    <section id="order-summary"><br>
+      <h2>Order Summary</h2><br>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamically filled rows -->
+        </tbody>
+      </table>
+      <p>Total Price: $<span id="total-price">0</span></p>
+      <button id="buy-now"><a href ="./confirmation.html">Buy Now</button>
+      <button id="save-favorite">Save as Favorite</button>
+      <button id="apply-favorite">Apply Favorite</button>
+    </section>
+  </main>
+  
+  <script src="./Scripts/script.js"></script>
+  <script src="./Scripts/nav.js"></script>
+</body>
+</html>
